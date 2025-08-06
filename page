@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Page</title>
+  <style>
+    .big-label {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 40px 0 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Chat Test Page</h1>
+  
+  <div class="big-label">This is a Big Label</div>
+
+  <!-- Add your chat script or component here -->
+
+</body>
+</html>

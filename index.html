@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Test Page</title>
+  <style>
+    .big-label {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 40px 0 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Chat Test Page</h1>
+  
+  <div class="big-label">This is a Big Label</div>
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DWU00000T4sCb',
+				'Test_Channel',
+				'https://emfire5-dev-ed.develop.my.site.com/ESWTestChannel1754485838303',
+				{
+					scrt2URL: 'https://emfire5-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://emfire5-dev-ed.develop.my.site.com/ESWTestChannel1754485838303/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
